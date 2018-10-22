@@ -24,5 +24,4 @@ RUN  cd Python-3.5.6 && \
                 --with-system-expat \
                 --with-system-ffi \
                 --enable-ipv6 --with-threads --with-pydebug --disable-rpath && \
-            make && \
-            make install
+            make -j install
