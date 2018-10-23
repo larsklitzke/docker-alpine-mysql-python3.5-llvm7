@@ -37,5 +37,8 @@ RUN	python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     test -e /usr/bin/pip || ln -s /usr/bin/pip3 /usr/bin/pip;
 
-# Upgrade setuptools
-RUN pip install --no-cache-dir -U setuptools
+# Upgrade setuptools and install some python packages
+RUN pip install --no-cache-dir -U \
+    setuptools \
+    lxml \
+    pymysql
