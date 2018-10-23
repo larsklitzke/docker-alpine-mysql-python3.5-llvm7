@@ -1,5 +1,6 @@
 # use the latest mysql version
 FROM python:3.5.6-alpine3.8
+MAINTAINER Lars Klitzke <Lars.Klitzke@gmail.com>
 
 # VERSIONS
 ENV ALPINE_VERSION=3.8 \
@@ -24,7 +25,7 @@ RUN apk --no-cache add \
 	libwebp-dev \
 	linux-headers \
 	make \
-	postgres-dev \
+	py3-psycopg2 \
 	openjpeg-dev \
 	python3-dev \
 	tiff-dev \
