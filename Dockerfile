@@ -24,8 +24,8 @@ RUN apk --no-cache add \
 	libwebp-dev \
 	linux-headers \
 	make \
+	postgres-dev \
 	openjpeg-dev \
-	openssl-dev \
 	python3-dev \
 	tiff-dev \
 	zlib-dev \
