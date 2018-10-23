@@ -27,7 +27,6 @@ RUN apk --no-cache add \
 	make \
 	py3-psycopg2 \
 	openjpeg-dev \
-	python3-dev \
 	tiff-dev \
 	zlib-dev \
 	libxml2-dev \
