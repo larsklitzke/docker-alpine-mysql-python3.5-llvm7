@@ -11,6 +11,9 @@ RUN apk update && \
 	apk --no-cache add mysql mysql-client && \
 	addgroup mysql mysql
 
+# replace librressl with openssl
+RUN apk --no-cache del libressl-dev
+
 # add python dev dependencies
 RUN apk --no-cache add \
 	autoconf \
@@ -24,8 +27,8 @@ RUN apk --no-cache add \
 	libpng-dev \
 	libwebp-dev \
 	linux-headers \
+	openssl-dev \
 	make \
-	py3-psycopg2 \
 	openjpeg-dev \
 	tiff-dev \
 	zlib-dev \
@@ -34,7 +37,6 @@ RUN apk --no-cache add \
 
 # Ensure pip is installed
 RUN	python3 -m ensurepip && \
-    rm -r /usr/lib/python*/ensurepip && \
     test -e /usr/bin/pip || ln -s /usr/bin/pip3 /usr/bin/pip;
 
 # Upgrade setuptools and install some python packages
