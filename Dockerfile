@@ -1,5 +1,5 @@
 # use the latest mysql version
-FROM python:3.5-alpine
+FROM python:3.5.6-alpine3.8
 
 # add mysql
 RUN apk update && \
