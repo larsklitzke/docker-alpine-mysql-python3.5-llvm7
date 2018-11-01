@@ -43,4 +43,7 @@ RUN	python3 -m ensurepip && \
 RUN pip install --no-cache-dir -U \
     setuptools \
     lxml \
-    pymysql
+    pymysql \
+    sqlalchemy \
+    sqlalchemy_utils \
+    marshmallow==3.0.0b13
