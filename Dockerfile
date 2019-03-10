@@ -1,9 +1,9 @@
 # use the latest mysql version
-FROM python:3.5.6-alpine3.8
+FROM python:3.5.6-alpine3.9
 MAINTAINER Lars Klitzke <Lars.Klitzke@gmail.com>
 
 # VERSIONS
-ENV ALPINE_VERSION=3.8 \
+ENV ALPINE_VERSION=3.9 \
     PYTHON_VERSION=3.5.6
 
 # add mysql
