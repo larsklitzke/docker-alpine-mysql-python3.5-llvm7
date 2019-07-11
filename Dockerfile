@@ -1,4 +1,3 @@
-# use the latest mysql version
 FROM larsklitzke/alpine-python3.5-llvm7
 MAINTAINER Lars Klitzke <Lars.Klitzke@gmail.com>
 
